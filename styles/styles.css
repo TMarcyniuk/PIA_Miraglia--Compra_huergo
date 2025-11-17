@@ -1,5 +1,5 @@
 :root {
-    --primary: #00298f;
+    --primary: #4178ff;
     --secondary: #0050c3;
     --tertiary: #00b4e6;
     --light: #f2f9ff;
@@ -14,7 +14,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    padding-top: 160px;
+    padding-top: 140px;
     color: var(--text-primary);
     background-color: var(--light);
 }
@@ -30,8 +30,8 @@ header {
 }
 
 header .logo-img {
-    width: 130px;
-    height: 110px;
+    width: 90px;
+    height: 70px;
     object-fit: cover;
 }
 
@@ -46,7 +46,7 @@ header .logo-img {
 
 #contactanos {
     padding-right: 20px;
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 .nav-secondary {
@@ -55,7 +55,7 @@ header .logo-img {
     transition: color 0.3s ;
     color: var(--light);
     align-items: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .nav-secondary a:hover {
@@ -73,7 +73,7 @@ header .logo-img {
 }
 
 .nav-mobile {
-    background-color: var(--secondary);
+    background-color: var(--grey);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ header .logo-img {
 
 .nav-mobile a {
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--light);
     font-weight: 500;
     padding: 10px;
     border-radius: 5px;
@@ -96,12 +96,12 @@ header .logo-img {
 
 
 .seccion1 {
-    background: var(--secondary);
+    background: var(--primary);
     padding: 40px;
 }
 
 .seccion2 {
-    background-color: var(--grey);
+    background-color: var(--light);
 }
 
 .seccion3 {
@@ -124,13 +124,6 @@ header .logo-img {
     margin: 0;
 }
 
-.productos {
-    background-color: var(--tertiary);
-    display: block;
-    border-radius: 15px;
-    border: 5px solid var(--light);
-    padding: 30px;
-}
 
 .titulo-seccion {
     text-align: left;
@@ -276,4 +269,10 @@ footer {
 footer p {
     margin: 0;
     color: var(--light);
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 80px; /* Ajusta este valor según la altura real de tu header mobile */
+    }
 }
