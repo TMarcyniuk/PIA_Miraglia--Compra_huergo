@@ -273,6 +273,6 @@ footer p {
 
 @media (max-width: 767px) {
     body {
-        padding-top: 80px; /* Ajusta este valor según la altura real de tu header mobile */
+        padding-top: 80px;
     }
 }
