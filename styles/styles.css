@@ -151,29 +151,31 @@ header .logo-img {
 
 .bloque_producto {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    border: 2px solid var(--primary);
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: var(--light);
-    padding: 20px;
-    gap: 20px;
-    min-height: 180px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    margin: 0 10px;
+    gap: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 110px;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .bloque_producto:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+   background: #f3f3f3; 
+   transform: scale(1.02);
 }
 
 .bloque_producto img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
+    height: 90%;
+    width: auto;
+    object-fit: contain;
+}
+
+.bloque_producto p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* ============ SECCION 3: CATEGORÍAS ============ */
