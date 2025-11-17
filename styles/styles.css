@@ -1,3 +1,7 @@
+/* ==============================
+   VARIABLES Y ESTILOS GENERALES
+============================== */
+
 :root {
     --primary: #4178ff;
     --secondary: #0050c3;
@@ -9,7 +13,6 @@
 
     --text-primary: #171e43;
     --text-secondary: #4b5fa0;
-
 }
 
 body {
@@ -19,7 +22,10 @@ body {
     background-color: var(--light);
 }
 
-/* ============ HEADER ============ */
+/* ==============================
+   HEADER (SE MANTIENE COMPLETO)
+============================== */
+
 header {
     color: var(--light);
 }
@@ -52,7 +58,7 @@ header .logo-img {
 .nav-secondary {
     text-decoration: none;
     background-color: var(--grey);
-    transition: color 0.3s ;
+    transition: color 0.3s;
     color: var(--light);
     align-items: center;
     font-size: 1.2em;
@@ -95,6 +101,10 @@ header .logo-img {
 }
 
 
+/* ==============================
+   SECCIONES PRINCIPALES
+============================== */
+
 .seccion1 {
     background: var(--primary);
     padding: 40px;
@@ -119,11 +129,10 @@ header .logo-img {
 }
 
 /* ============ SECCION 2: PRODUCTOS DESTACADOS ============ */
+
 .seccion2 {
     padding: 60px 0;
-    margin: 0;
 }
-
 
 .titulo-seccion {
     text-align: left;
@@ -132,19 +141,6 @@ header .logo-img {
     font-size: 2em;
     font-weight: bold;
     padding: 0 15px;
-}
-
-.productos-carousel-container {
-    position: relative;
-    overflow: hidden;
-}
-
-#productosCarousel .carousel-inner {
-    padding: 0 15px;
-}
-
-#productosCarousel .carousel-item {
-    transition: transform 0.6s ease;
 }
 
 .bloque_producto {
@@ -157,7 +153,6 @@ header .logo-img {
     background-color: var(--light);
     padding: 20px;
     gap: 20px;
-    height: 100%;
     min-height: 180px;
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 0 10px;
@@ -173,53 +168,12 @@ header .logo-img {
     height: 120px;
     object-fit: cover;
     border-radius: 10px;
-    flex-shrink: 0;
-}
-
-.bloque_producto h3 {
-    margin: 0;
-    flex: 1;
-    font-size: 1.2em;
-}
-
-.bloque_producto h3 a {
-    text-decoration: none;
-    color: var(--text-primary);
-    transition: color 0.3s;
-}
-
-.bloque_producto h3 a:hover {
-    color: var(--primary);
-}
-
-#productosCarousel .carousel-control-prev,
-#productosCarousel .carousel-control-next {
-    width: 50px;
-    height: 50px;
-    background-color: var(--primary);
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
-}
-
-#productosCarousel .carousel-control-prev {
-    left: -25px;
-}
-
-#productosCarousel .carousel-control-next {
-    right: -25px;
-}
-
-#productosCarousel .carousel-control-prev:hover,
-#productosCarousel .carousel-control-next:hover {
-    background-color: var(--tertiary);
 }
 
 /* ============ SECCION 3: CATEGORÍAS ============ */
+
 .seccion3 {
     padding: 60px 0;
-    margin: 0;
 }
 
 .seccion3 .titulo-seccion {
@@ -251,7 +205,6 @@ header .logo-img {
     bottom: 0;
     left: 0;
     right: 0;
-    margin: 0;
     padding: 15px;
     color: var(--light);
     background-color: rgba(0, 0, 0, 0.6);
@@ -260,10 +213,14 @@ header .logo-img {
     font-weight: bold;
 }
 
+
+/* ==============================
+   FOOTER
+============================== */
+
 footer {
     background-color: var(--dark);
     padding: 30px 0;
-    margin: 0;
 }
 
 footer p {
@@ -271,8 +228,74 @@ footer p {
     color: var(--light);
 }
 
+
+/* ============================================================
+   🔵 COMPONENTES DEL ARMADOR DE PC (DEL SEGUNDO CSS PERO MEJORADO)
+=============================================================== */
+
+/* LOGO CONTENEDOR (pequeño) */
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+/* TARJETAS PEQUEÑAS CUADRADAS (categorías, items, etc.) */
+.item-box { 
+    background: #e9ecef; 
+    padding: 12px; 
+    border-radius: 10px; 
+    text-align: center; 
+    transition: 0.2s; 
+}
+
+.item-box:hover { 
+    transform: scale(1.05); 
+}
+
+.item-img {
+    width: 100%;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 5px;
+}
+
+/* TARJETAS GRANDES (opción para elegir componente) */
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 110px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.opcion:hover {
+   background: #f3f3f3; 
+   transform: scale(1.02);
+}
+
+.opcion img {
+    height: 90%;
+    width: auto;
+    object-fit: contain;
+}
+
+.opcion p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
 @media (max-width: 767px) {
     body {
-        padding-top: 80px; /* Ajusta este valor según la altura real de tu header mobile */
+        padding-top: 80px;
     }
 }
