@@ -2,13 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-   
-   
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> 
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../styles/styles.css">
 
@@ -33,7 +29,7 @@
 
                 <!-- mostrar Contactanos -->
                 <div class="d-none d-md-flex ms-auto align-items-center" id="contactanos">
-                <a class="nav-link" href="#">Contactanos</a>
+                <a class="nav-link" href="../contactanos/contactanos.html">Contactanos</a>
                 </div>
             </div>
         </nav>
@@ -43,8 +39,8 @@
             <div class="container-fluid ">
                 <div class="d-flex gap-3">
                 <a class="nav-link px-2" href="../armapc/armapc_procesador.html">Armá tu PC</a>
-                <a class="nav-link px-2" href="#">Productos</a>
-                <a class="nav-link px-2" href="#">Mi carrito</a>
+                <a class="nav-link px-2" href="../listaproductos/listaproductos_procesadores.html">Productos</a>
+                <a class="nav-link px-2" href="../carrito/carrito.html">Mi carrito</a>
                 </div>
             </div>
         </nav>
@@ -54,12 +50,12 @@
         <div class="p-3 nav-mobile">
             <div class="d-flex flex-column gap-2">
             <!-- contacto / carrito -->
-            <a class="nav-link" href="#">Contactanos</a>
+            <a class="nav-link" href="../contactanos/contactanos.html">Contactanos</a>
             <hr>
             <!-- categorías (todas aquí unidas) -->
-            <a class="nav-link" href="#">Armá tu PC</a>
-            <a class="nav-link" href="#">Productos</a>
-            <a class="nav-link" href="#">Mi Carrito</a>
+            <a class="nav-link" href="../armapc/armapc_procesador.html">Armá tu PC</a>
+            <a class="nav-link" href="../listaproductos/listaproductos_procesadores.html">Productos</a>
+            <a class="nav-link" href="../carrito/carrito.html">Mi Carrito</a>
             </div>
         </div>
         </div>
@@ -103,166 +99,77 @@
             </div>
         </section>
 
-        <!-- SECCION 2: Productos Destacados -->
-        <section class="seccion2">
-            <div class="container productos">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="titulo-seccion">Nuestros Productos Destacados</h2>
+        <!-- SECCIÓN 2: Productos Destacados -->
+       <section id="productos" class="container py-5 seccion2">
+        <h2 class="text-center mb-4">Productos Destacados</h2>
+
+        <div class="row g-4">
+
+            <!-- Producto 1 (SE VE EN TODOS LOS TAMAÑOS) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="../Productos/producto_procesador2.html" class="text-decoration-none text-dark">
+                    <div class="bloque_producto">
+                        <img src="../imagenes/procesador2.png" alt="Ryzen 9 7900X">
+                        <p>Ryzen 9 7900X</p>
                     </div>
-                </div>
-                
-                <!-- Carrusel para MD y SM (mostrar 2 y 1 respectivamente) -->
-                <div class="d-lg-none">
-                    <div id="productosCarousel" class="carousel slide" data-bs-ride="false">
-                        <div class="carousel-inner">
-                            <!-- Slide 1: Productos 1-2 -->
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 mb-4">
-                                        <div class="bloque_producto">
-                                            <img src="../imagenes/procesador2.png" alt="Foto procesador">
-                                            <h3><a href="">Ryzen 9700X</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 mb-4 d-none d-md-block">
-                                        <div class="bloque_producto">
-                                            <img src="../imagenes/mother4.png" alt="Producto 2">
-                                            <h3><a href="">Producto 2</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Slide 2: Productos 2-3 (SM) o 3-4 (MD) -->
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 mb-4">
-                                        <div class="bloque_producto">
-                                            <img src="../imagenes/imagen_test2.png" alt="Producto 2" class="d-md-none">
-                                            <img src="../imagenes/imagen_test3.jfif" alt="Producto 3" class="d-none d-md-block">
-                                            <h3><a href="" class="d-md-none">Producto 2</a></h3>
-                                            <h3><a href="" class="d-none d-md-block">Producto 3</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 mb-4 d-none d-md-block">
-                                        <div class="bloque_producto">
-                                            <img src="../imagenes/imagen_test1.jfif" alt="Producto 4">
-                                            <h3><a href="">Producto 4</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Slide 3: Producto 3 (SM) o 5-6 (MD) -->
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-12 col-md-6 mb-4">
-                                        <div class="bloque_producto">
-                                            <img src="../imagenes/imagen_test3.jfif" alt="Producto 3" class="d-md-none">
-                                            <img src="../imagenes/imagen_test2.png" alt="Producto 5" class="d-none d-md-block">
-                                            <h3><a href="" class="d-md-none">Producto 3</a></h3>
-                                            <h3><a href="" class="d-none d-md-block">Producto 5</a></h3>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-6 mb-4 d-none d-md-block">
-                                        <div class="bloque_producto">
-                                            <img src="../imagenes/imagen_test3.jfif" alt="Producto 6">
-                                            <h3><a href="">Producto 6</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Slides adicionales solo para SM -->
-                            <div class="carousel-item d-md-none">
-                                <div class="row">
-                                    <div class="col-12 mb-4">
-                                        <div class="bloque_producto">
-                                            <img src="../imagenes/imagen_test1.jfif" alt="Producto 4">
-                                            <h3><a href="">Producto 4</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="carousel-item d-md-none">
-                                <div class="row">
-                                    <div class="col-12 mb-4">
-                                        <div class="bloque_producto">
-                                            <img src="../imagenes/imagen_test2.png" alt="Producto 5">
-                                            <h3><a href="">Producto 5</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="carousel-item d-md-none">
-                                <div class="row">
-                                    <div class="col-12 mb-4">
-                                        <div class="bloque_producto">
-                                            <img src="../imagenes/imagen_test3.jfif" alt="Producto 6">
-                                            <h3><a href="">Producto 6</a></h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Grid normal para LG -->
-                <div class="d-none d-lg-block">
-                    <div class="row">
-                        <div class="col-lg-4 mb-4">
-                            <div class="bloque_producto">
-                                <img src="../imagenes/imagen_test1.jfif" alt="Producto 1">
-                                <h3><a href="">Producto 1</a></h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="bloque_producto">
-                                <img src="../imagenes/imagen_test2.png" alt="Producto 2">
-                                <h3><a href="">Producto 2</a></h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="bloque_producto">
-                                <img src="../imagenes/imagen_test3.jfif" alt="Producto 3">
-                                <h3><a href="">Producto 3</a></h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="bloque_producto">
-                                <img src="../imagenes/imagen_test1.jfif" alt="Producto 4">
-                                <h3><a href="">Producto 4</a></h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="bloque_producto">
-                                <img src="../imagenes/imagen_test2.png" alt="Producto 5">
-                                <h3><a href="">Producto 5</a></h3>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-4">
-                            <div class="bloque_producto">
-                                <img src="../imagenes/imagen_test3.jfif" alt="Producto 6">
-                                <h3><a href="">Producto 6</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
-        </section>
+
+            <!-- Producto 2 (SE VE EN TODOS LOS TAMAÑOS) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="../Productos/producto_mother4.html" class="text-decoration-none text-dark">
+                    <div class="bloque_producto">
+                        <img src="../imagenes/mother4.png" alt="MSI Z690 Force WiFi">
+                        <p>MSI Z690 Force WiFi</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Producto 3 (SE VE EN TODOS LOS TAMAÑOS) -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <a href="../Productos/ram4.html" class="text-decoration-none text-dark">
+                    <div class="bloque_producto">
+                        <img src="../imagenes/ram4.png" alt="Kingston Fury Beast DDR5">
+                        <p>Kingston Fury Beast DDR5 32GB</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Producto 4 (OCULTO EN TAMAÑO CHICO — SE VE DESDE MD PARA ARRIBA) -->
+            <div class="col-12 col-md-6 col-lg-4 d-none d-md-block">
+                <a href="../Productos/gpu4.html" class="text-decoration-none text-dark">
+                    <div class="bloque_producto">
+                        <img src="../imagenes/gpu4.png" alt="RTX 5090">
+                        <p>RTX 5090 Gaming OC 32GB</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Producto 5 (SOLO SE VE EN PANTALLA GRANDE — LG Y SUPERIOR) -->
+            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                <a href="../Productos/producto_fuente3.html" class="text-decoration-none text-dark">
+                    <div class="bloque_producto">
+                        <img src="../imagenes/fuente3.png" alt="ROG THOR 1200P">
+                        <p>ASUS ROG THOR 1200P</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Producto 6 (SOLO SE VE EN PANTALLA GRANDE — LG Y SUPERIOR) -->
+            <div class="col-12 col-md-6 col-lg-4 d-none d-lg-block">
+                <a href="../Productos/producto_gabinete3.html" class="text-decoration-none text-dark">
+                    <div class="bloque_producto">
+                        <img src="../imagenes/gab3.png" alt="ROG Hyperion White">
+                        <p>Asus ROG Hyperion White</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
 
         <!-- SECCION 3: Categorías -->
         <section class="seccion3">
@@ -275,7 +182,7 @@
                 <div class="row">
                     <!-- Categoría 1: Grande - Ocupa 6 columnas -->
                     <div class="col-12 col-md-6 col-lg-6 mb-4">
-                        <a href="../listaproductos/listaproductos_procesadores" class="categoria-link" style="height: 350px;">
+                        <a href="../listaproductos/listaproductos_procesadores.html" class="categoria-link" style="height: 350px;">
                             <img src="../imagenes/cat1.png" alt="Foto procesador">
                             <h3>Procesadores</h3>
                         </a>
@@ -286,7 +193,7 @@
                         <div class="row">
                             <!-- Categoría 2: Ocupa 8 de las 12 columnas disponibles -->
                             <div class="col-12 col-lg-8 mb-4">
-                                <a href="../listaproductos/listaproductos_memorias" class="categoria-link" style="height: 165px;">
+                                <a href="../listaproductos/listaproductos_memorias.html" class="categoria-link" style="height: 165px;">
                                     <img src="../imagenes/cat2.png" alt=" Foto memoria RAM">
                                     <h3>RAM</h3>
                                 </a>
@@ -294,7 +201,7 @@
 
                             <!-- Categoría 3: Ocupa 4 de las 12 columnas disponibles -->
                             <div class="col-12 col-lg-4 mb-4">
-                                <a href="../listaproductos/listaproductos_GPUs" class="categoria-link" style="height: 165px;">
+                                <a href="../listaproductos/listaproductos_GPUs.html" class="categoria-link" style="height: 165px;">
                                     <img src="../imagenes/cat3.png" alt="Foto GPU">
                                     <h3>GPUs</h3>
                                 </a>
@@ -302,7 +209,7 @@
                             
                             <!-- Categoría 7: Ocupa las 12 columnas disponibles (ancho completo) -->
                             <div class="col-12 mb-4">
-                                <a href="../listaproductos/listaproductos_almacenamientos" class="categoria-link" style="height: 165px;">
+                                <a href="../listaproductos/listaproductos_almacenamientos.html" class="categoria-link" style="height: 165px;">
                                     <img src="../imagenes/cat7.png" alt="Foto ssd">
                                     <h3>Almacenamiento</h3>
                                 </a>
@@ -315,13 +222,13 @@
                 <div class="row">
                     <!-- Categoría 4 y 5: Pequeñas -->
                     <div class="col-12 col-md-6 col-lg-3 mb-4">
-                        <a href="../listaproductos/listaproductos_gabinetes" class="categoria-link" style="height: 200px;">
+                        <a href="../listaproductos/listaproductos_gabinetes.html" class="categoria-link" style="height: 200px;">
                             <img src="../imagenes/cat4.png" alt="Foto gabinete">
                             <h3>Gabinetes</h3>
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 mb-4">
-                        <a href="../listaproductos/listaproductos_fuentes" class="categoria-link" style="height: 200px;">
+                        <a href="../listaproductos/listaproductos_fuentes.html" class="categoria-link" style="height: 200px;">
                             <img src="../imagenes/cat5.png" alt="Foto de una fuente de poder">
                             <h3>Fuente de Poder</h3>
                         </a>
@@ -329,7 +236,7 @@
                     
                     <!-- Categoría 6: Extra ancha -->
                     <div class="col-12 col-md-12 col-lg-6 mb-4">
-                        <a href="../listaproductos/listaproductos_motherboards" class="categoria-link" style="height: 200px;">
+                        <a href="../listaproductos/listaproductos_motherboards.html" class="categoria-link" style="height: 200px;">
                             <img src="../imagenes/cat6.png" alt="Foto de tres placas madre">
                             <h3>Motherboards</h3>
                         </a>
