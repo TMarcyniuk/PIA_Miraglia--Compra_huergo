@@ -298,6 +298,78 @@ footer p {
 }
 
 
+/* CARRITO */
+.carrito-page {
+    padding-top: 140px; /* igual que index */
+    background-color: var(--light);
+}
+
+/* Título */
+.carrito-titulo h1 {
+    background: var(--light-grey);
+    color: var(--text-primary);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Lista izquierda */
+.carrito-lista {
+    margin-top: 20px;
+}
+
+/* Bloques de productos (mismo estilo que index) */
+.bloque_producto {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--light);
+    padding: 20px;
+    gap: 20px;
+    min-height: 180px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px auto;
+}
+
+.bloque_producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.bloque_producto img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Columna derecha */
+.carrito-box {
+    background: var(--light-grey);
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid var(--primary);
+}
+
+/* Footer */
+.carrito-footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+}
+
+.carrito-resumen {
+    display: flex;
+    align-items: center;      
+    justify-content: center;  
+    padding: 40px 0;          
+}
+
 /* ==============================
    RESPONSIVE
 ============================== */
