@@ -85,17 +85,24 @@
                             </button>
                             <ul class="dropdown-menu w-100">
                                 <li><h6 class="dropdown-header">Marca</h6></li>
-                                <li><a class="dropdown-item" href="#">Samsung</a></li>
-                                <li><a class="dropdown-item" href="#">PNY</a></li>
+                                <li><a class="dropdown-item" href="#">MSI</a></li>
+                                <li><a class="dropdown-item" href="#">NVIDIA</a></li>
+
                                 <li><hr class="dropdown-divider"></li>
-                                <li><h6 class="dropdown-header">Capacidad de almacenamiento</h6></li>
-                                <li><a class="dropdown-item" href="#">Ascendiente</a></li>
-                                <li><a class="dropdown-item" href="#">Descendiente</a></li>
+
+                                <li><h6 class="dropdown-header">Memoria VRAM</h6></li>
+                                <li><a class="dropdown-item" href="#">16GB</a></li>
+                                <li><a class="dropdown-item" href="#">24GB</a></li>
+                                <li><a class="dropdown-item" href="#">32GB</a></li>
+                            
                                 <li><hr class="dropdown-divider"></li>
-                                <li><h6 class="dropdown-header">Velocidad de lectura/escritura</h6></li>
-                                <li><a class="dropdown-item" href="#">Ascendiente</a></li>
-                                <li><a class="dropdown-item" href="#">Descendiente</a></li>
+
+                                <li><h6 class="dropdown-header">Arquitectura/Generación</h6></li>
+                                <li><a class="dropdown-item" href="#">Ada Lovelace (RTX 40 series)</a></li>
+                                <li><a class="dropdown-item" href="#">Blackwell (RTX 50 series)</a></li>
+
                                 <li><hr class="dropdown-divider"></li>
+                                
                                 <li><h6 class="dropdown-header">Precio</h6></li>
                                 <li><a class="dropdown-item" href="#">Ascendiente</a></li>
                                 <li><a class="dropdown-item" href="#">Descendiente</a></li>
@@ -113,22 +120,24 @@
                                 <li class="mb-3">
                                     <strong>Marca</strong>
                                     <ul class="list-unstyled ps-3">
-                                        <li><a href="#" class="text-decoration-none">Samsung</a></li>
-                                        <li><a href="#" class="text-decoration-none">PNY</a></li>
+                                        <li><a href="#" class="text-decoration-none">MSI</a></li>
+                                        <li><a href="#" class="text-decoration-none">NVIDIA</a></li>
+                                        <li><a href="#" class="text-decoration-none">Gigabyte</a></li>
                                     </ul>
                                 </li>
                                 <li class="mb-3">
-                                    <strong>Capacidad de almacenamiento</strong>
+                                    <strong>Memoria VRAM</strong>
                                     <ul class="list-unstyled ps-3">
-                                        <li><a href="#" class="text-decoration-none">Ascendiente</a></li>
-                                        <li><a href="#" class="text-decoration-none">Descendiente</a></li>
+                                        <li><a href="#" class="text-decoration-none">16GB</a></li>
+                                        <li><a href="#" class="text-decoration-none">24GB</a></li>
+                                        <li><a href="#" class="text-decoration-none">32GB</a></li>
                                     </ul>
                                 </li>
                                 <li class="mb-3">
-                                    <strong>Velocidad de lectura/escritura</strong>
+                                    <strong>Arquitectura/Generación</strong>
                                     <ul class="list-unstyled ps-3">
-                                        <li><a href="#" class="text-decoration-none">Ascendiente</a></li>
-                                        <li><a href="#" class="text-decoration-none">Descendiente</a></li>
+                                        <li><a href="#" class="text-decoration-none">Ada Lovelace (RTX 40 series)</a></li>
+                                        <li><a href="#" class="text-decoration-none">Blackwell (RTX 50 series)</a></li>
                                     </ul>
                                 </li>
                                 <li class="mb-3">
@@ -145,54 +154,46 @@
                     <!-- Columna de productos -->
                     <div class="col-12 col-md-8 col-lg-9 d-flex align-items-center">
                         <div class="row g-3 w-100">
-                            <!-- Producto 1 -->
-                            <div class="col-12 col-md-12 col-lg-6" data-marca="Kingston" data-capacidad="500" data-lectura="3500" data-escritura="2100" data-precio="85999">
-                                <a href="armapc_fuente.html" class="text-decoration-none text-dark">
-                                    <div class="opcion">
-                                        <img src="../imagenes/ssd1.png" alt="Kingston NV3 500GB">
-                                        <div>
-                                            <p class="mb-1">Kingston NV3 500GB</p>
-                                            <p class="text-muted small mb-0">$85.999</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Producto 2 -->
-                            <div class="col-12 col-md-12 col-lg-6" data-marca="Samsung" data-capacidad="1000" data-lectura="7000" data-escritura="5000" data-precio="125999">
-                                <a href="armapc_fuente.html" class="text-decoration-none text-dark">
-                                    <div class="opcion">
-                                        <img src="../imagenes/ssd2.png" alt="Samsung 980 PRO">
-                                        <div>
-                                            <p class="mb-1">Samsung 980 PRO PCle 4.0 NVMe M.2 7000MB/s</p>
-                                            <p class="text-muted small mb-0">$125.999</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Producto 3 -->
-                            <div class="col-12 col-md-12 col-lg-6" data-marca="PNY" data-capacidad="2000" data-lectura="3500" data-escritura="3000" data-precio="189999">
-                                <a href="armapc_fuente.html" class="text-decoration-none text-dark">
-                                    <div class="opcion">
-                                        <img src="../imagenes/ssd3.png" alt="SSD Pny CS1030 2TB">
-                                        <div>
-                                            <p class="mb-1">SSD Pny CS1030 2TB M.2</p>
-                                            <p class="text-muted small mb-0">$189.999</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Producto 4 -->
-                            <div class="col-12 col-md-12 col-lg-6" data-marca="Samsung" data-capacidad="4000" data-lectura="14800" data-escritura="12000" data-precio="599999">
+                            <!-- OPCIÓN 1 -->
+                            <div class="col-md-6">
                                 <a href="armapc_almacenamiento.html" class="text-decoration-none text-dark">
                                     <div class="opcion">
-                                        <img src="../imagenes/ssd4.png" alt="Samsung 4TB SSD">
-                                        <div>
-                                            <p class="mb-1">Samsung 4TB SSD M.2 PCIe 5.0 14800MB/s</p>
-                                            <p class="text-muted small mb-0">$599.999</p>
-                                        </div>
+                                        <img src="../imagenes/gpu1.png">
+                                        <p>GEFORCE RTX 4080 16GB</p>
+                                        <p class="text-muted small mb-0">$1.299.999</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- OPCIÓN 2 -->
+                            <div class="col-md-6">
+                                <a href="armapc_almacenamiento.html" class="text-decoration-none text-dark">
+                                    <div class="opcion">
+                                        <img src="../imagenes/gpu2.png">
+                                        <p>GeForce RTX 4090 GAMING TRIO 24G</p>
+                                        <p class="text-muted small mb-0">$2.499.999</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- OPCIÓN 3 -->
+                            <div class="col-md-6">
+                                <a href="armapc_almacenamiento.html" class="text-decoration-none text-dark">
+                                    <div class="opcion">
+                                        <img src="../imagenes/gpu3.png">
+                                        <p>GeForce RTX™ 5080 GAMING OC 16G</p>
+                                        <p class="text-muted small mb-0">$1.599.999</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- OPCIÓN 4 -->
+                            <div class="col-md-6">
+                                <a href="armapc_almacenamiento.html" class="text-decoration-none text-dark">
+                                    <div class="opcion">
+                                        <img src="../imagenes/gpu4.png">
+                                        <p>Placa de Video Gigabyte Nvidia Geforce RTX 5090 Gaming OC 32GB</p>
+                                        <p class="text-muted small mb-0">$3.299.999</p>
                                     </div>
                                 </a>
                             </div>
