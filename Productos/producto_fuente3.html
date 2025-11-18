@@ -2,27 +2,64 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"> 
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>ASUS 1200W ROG THOR 1200P ATX 80 PLATINUM RGB MODULAR NEGRO - producto</title>
-    <link rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header class="container-fluid bg-dark text-white py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html">
-                <img src="img/logo.png" class="logo" alt="logo">
-            </a>
-            <nav>
-                <a href="armapc_almacenamiento.html" class="text-white mx-2 nav-link-header">Volver a almacenamiento</a>
-                <a href="#" class="text-white mx-2 nav-link-header">Contacto</a>
-                <a href="carrito.html" class="text-white mx-2 nav-link-header">Carrito</a>
-            </nav>
+    <header class="fixed-top header-top">
+
+        <!-- Navbar superior (logo + contact/cart) -->
+        <nav class="navbar">
+            <div class="container-fluid align-items-center">
+
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="../imagenes/logo.png" class="rounded logo-img" alt="Logo">
+                </a>
+
+                <!-- Toggler visible SOLO en sm (colapsa todo el menú mobile) -->
+                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- mostrar Contactanos -->
+                <div class="d-none d-md-flex ms-auto align-items-center" id="contactanos">
+                <a class="nav-link" href="../contactanos/contactanos.html">Contactanos</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navbar secundario (categorías) visible md+ -->
+        <nav class="navbar d-none d-md-block nav-secondary">
+            <div class="container-fluid ">
+                <div class="d-flex gap-3">
+                <a class="nav-link px-2" href="../armapc/armapc_procesador.html">Armá tu PC</a>
+                <a class="nav-link px-2" href="../listaproductos/listaproductos_procesadores.html">Productos</a>
+                <a class="nav-link px-2" href="../carrito/carrito.html">Mi carrito</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- MENÚ MÓVIL ÚNICO (aparece solo en sm) que contiene ambos navs juntos -->
+        <div class="collapse" id="mobileMenu">
+        <div class="p-3 nav-mobile">
+            <div class="d-flex flex-column gap-2">
+            <!-- contacto / carrito -->
+            <a class="nav-link" href="../contactanos/contactanos.html">Contactanos</a>
+            <hr>
+            <!-- categorías (todas aquí unidas) -->
+            <a class="nav-link" href="../armapc/armapc_procesador.html">Armá tu PC</a>
+            <a class="nav-link" href="../listaproductos/listaproductos_procesadores.html">Productos</a>
+            <a class="nav-link" href="../carrito/carrito.html">Mi Carrito</a>
+            </div>
         </div>
+        </div>
+
     </header>
 
     <div class="container mt-4">
@@ -38,7 +75,7 @@
             <div class="col-md-6">
                 <div class="p-4 bg-white border rounded shadow-sm">
                     <div class="producto-imagen text-center">
-                        <img src="img/fuente3.png" alt="Kingston NV3 500GB" class="img-fluid">
+                        <img src="../imagenes/fuente3.png" alt="Kingston NV3 500GB" class="img-fluid">
                     </div>
                 </div>
             </div>
